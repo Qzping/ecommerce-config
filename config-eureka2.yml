@@ -2,7 +2,7 @@ spring:
   application:
     name: register-center
 server:
-  port: 7001
+  port: 7002
 eureka:
   server:
     enable-self-preservation: false
@@ -13,7 +13,7 @@ eureka:
     service-url:
 #      defaultZone: htpp://localhost:7001/eureka/
 #      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-      defaultZone: http://ecommerce2:7002/eureka/
+      defaultZone: http://ecommerce1:7001/eureka/
   instance:
     prefer-ip-address: false
-    hostname: ecommerce1
+    hostname: ecommerce2
